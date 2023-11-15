@@ -1,2 +1,2 @@
 ###
-En este informe se va a relaizar la Actividad 1 
+En este informe se va a realizar la Actividad 1 
