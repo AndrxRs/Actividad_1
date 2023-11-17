@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Turistico</title>
 </head>
+
 <body>
     <nav>
         <div>
-            <img src="./images/logo.png" alt="logo"/>
+            <img src="./images/logo.png" alt="logo" />
         </div>
         <ul>
             <li><a href="index.html">Inicio</a></li>
             <li><a href="cantones.html">Cantones</a> </li>
             <li><a href="mapa_turistico.html">Mapa Turistico</a></li>
             <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="about_me.html">Sobre Notros</a></li>
         </ul>
     </nav>
+    <section>
+
+        <h1>Mapa Turístico - El Oro, Ecuador</h1>
+
+        <img src="./images/eloro.jpg" alt="Mapa El Oro, Ecuador" usemap="#mapa">
+
+        <map name="mapa">
+            <area shape="rect" coords="100,50,200,150" alt="Machala" href="machala.html">
+            <area shape="circle" coords="300,100,50" alt="Santa Rosa" href="santa_rosa.html">
+            <area shape="poly" coords="450,50,500,100,400,100" alt="Zaruma" href="zaruma.html">
+        </map>
+    </section>
     <footer>
         <div>
-            <img src="./images/logo.png" alt="logo"/>
+            <img src="./images/logo.png" alt="logo" />
         </div>
         <div>
             <ul>
@@ -34,7 +49,7 @@
         </div>
         <div>
             <label for="suscribete">Subscribete</label>
-            <input type="email" id="Subscribete" placeholder="email@example.com"/>
+            <input type="email" id="Subscribete" placeholder="email@example.com" />
             <button>Enviar</button>
         </div>
         <div>
@@ -44,4 +59,5 @@
         </div>
     </footer>
 </body>
+
 </html>
