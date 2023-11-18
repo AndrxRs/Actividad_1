@@ -8,7 +8,7 @@
 </head>
 
 <body>
-	<nav>
+	<nav id="navegacion">
 		<div>
 			<img src="./images/logo.png" alt="logo" />
 		</div>
@@ -20,7 +20,7 @@
 			<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
 		</ul>
 	</nav>
-	<section>
+	<section id="banner">
 		<video width="640" height="360" controls>
 			<source src="./videos/El_Oro.mp4" type="video/mp4"/>
 		</video>
@@ -36,63 +36,65 @@
 			</ul>
 		</div>
 	</section>
-	<article>
-		<h2>Provincia <strong>El ORO</strong></h2>
-		<div>
-			<p>
-				¡Bienvenidos a la página que te llevará a un emocionante viaje a través de la maravillosa provincia de
-				El Oro, Ecuador! Aquí encontrarás un tesoro de experiencias únicas y sitios turísticos que te dejarán
-				asombrado.
-			</p>
-			<p>
-				Se fundó el 23 de abril de 1884. Los antiguos habitantes de El Oro provinieron de la Isla Puná. Luego se
-				asentaron los Tumbez, los Mayavicas y los Piuras, en el preincario. La conquista incásica no influyó
-				significativamente en aquellos pueblos. Los españoles ingresaron por Tumbez, que se convirtió luego en
-				un puerto clave porque fue el asiento de las minas de Zaruma, cuya fama traspasó las fronteras.
-			</p>
-			<img width="100%" height="100%" src="./images/image2.png" alt="image2" />
-		</div>
-	</article>
-	<section>
-		<h2>
-			Que brinda la provincia de El Oro a la gente
-		</h2>
-		<div>
-			<img src="./images/festividades.png" alt="festividades" />
-			<h5>Festividades</h5>
-			<button>ver</button>
-		</div>
-		<div>
-			<img src="./images/Mineria.png" alt="Mineria" />
-			<h5>Mineria</h5>
-			<button>ver</button>
-		</div>
-		<div>
-			<img src="./images/Rios.png" alt="Rios" />
-			<h5>Rios</h5>
-			<button>ver</button>
-		</div>
+	<section id="info">
+		<article>
+			<h2>Provincia <strong>El ORO</strong></h2>
+			<div>
+				<p>
+					¡Bienvenidos a la página que te llevará a un emocionante viaje a través de la maravillosa provincia de
+					El Oro, Ecuador! Aquí encontrarás un tesoro de experiencias únicas y sitios turísticos que te dejarán
+					asombrado.
+				</p>
+				<p>
+					Se fundó el 23 de abril de 1884. Los antiguos habitantes de El Oro provinieron de la Isla Puná. Luego se
+					asentaron los Tumbez, los Mayavicas y los Piuras, en el preincario. La conquista incásica no influyó
+					significativamente en aquellos pueblos. Los españoles ingresaron por Tumbez, que se convirtió luego en
+					un puerto clave porque fue el asiento de las minas de Zaruma, cuya fama traspasó las fronteras.
+				</p>
+				<img width="100%" height="100%" src="./images/image2.png" alt="image2" />
+			</div>
+		</article>	
+		<article>
+			<h2>
+				Que brinda la provincia de El Oro a la gente
+			</h2>
+			<div>
+				<img src="./images/festividades.png" alt="festividades" />
+				<h5>Festividades</h5>
+				<button>ver</button>
+			</div>
+			<div>
+				<img src="./images/Mineria.png" alt="Mineria" />
+				<h5>Mineria</h5>
+				<button>ver</button>
+			</div>
+			<div>
+				<img src="./images/Rios.png" alt="Rios" />
+				<h5>Rios</h5>
+				<button>ver</button>
+			</div>
+		</article>
+		<h2>Ubicación Geografica</h2>
+		<article>
+			<div>
+				<img src="./images/mapa.png" alt="mapa" />
+			</div>
+			<div>
+				<h4>El Oro</h4>
+				<p>Busqueda de los sitios que ofrece esta bella provincia</p>
+				<form action="">
+					<label for="cantones">LUGARES TURISTICOS</label>
+					<select name="cantones" id="cantones">
+						<option value="portovelo">Portovelo</option>
+						<option value="machala">Machala</option>
+						<option value="piñas">Piñas</option>
+						<option value="zaruma">Zaruma</option>
+					</select>
+				</form>
+			</div>
+		</article>
 	</section>
-	<h2>Ubicación Geografica</h2>
-	<section>
-		<div>
-			<img src="./images/mapa.png" alt="mapa" />
-		</div>
-		<div>
-			<h4>El Oro</h4>
-			<p>Busqueda de los sitios que ofrece esta bella provincia</p>
-			<form action="">
-				<label for="cantones">LUGARES TURISTICOS</label>
-				<select name="cantones" id="cantones">
-					<option value="portovelo">Portovelo</option>
-					<option value="machala">Machala</option>
-					<option value="piñas">Piñas</option>
-					<option value="zaruma">Zaruma</option>
-				</select>
-			</form>
-		</div>
-	</section>
-	<footer>
+	<footer id="piePagina">
 		<div>
 			<img src="./images/logo.png" alt="logo" />
 		</div>
@@ -119,5 +121,4 @@
 		</div>
 	</footer>
 </body>
-
 </html>
