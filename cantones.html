@@ -5,50 +5,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantones</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
 </head>
 
 <body>
-    <nav>
-        <div>
+    <nav id="navegacion" class="absolute">
+        <div class="logo">
             <img src="./images/logo.png" alt="logo" />
         </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cantones.html">Cantones</a> </li>
-            <li><a href="mapa_turistico.html">Mapa Turistico</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-            <li><a href="sobre_nosotros.html">Sobre Notros</a></li>
+        <ul class="nav_submenu">
+            <li><a href="index.html" class="white">Inicio</a></li>
+            <li><a href="cantones.html" class="white">Cantones</a> </li>
+            <li><a href="mapa_turistico.html" class="white">Mapa Turistico</a></li>
+            <li><a href="contactos.html" class="white">Contactos</a></li>
+            <li><a href="sobre_nosotros.html" class="white">Sobre Nosotros</a></li>
         </ul>
     </nav>
-    <section>
-        <div>
-            <h1>Cantones del Oro</h1>
-            <img src="./images/bannercantones.png" alt="bannercantones">
+
+    <section class="banner_cantons">
+        <div class="cantons_img">
         </div>
+        <h1>Cantones del Oro</h1>
     </section>
-    <section>
-        <article>
-            <figure>
-                <video src="./videos/ElOro.mp4" controls></video>
-                <video src="./videos/ElOro3.mp4" controls></video>
-            </figure>
-            <aside>
-                <h2>El Oro
-                    y sus Maravillas</h2>
-                <p>Lorem ipsum dolor sit amet consectetur. Morbi ut molestie adipiscing commodo cursus maecenas. Turpis
-                    quis pellentesque id placerat. In interdum urna id dictum neque ut nisl egestas. Vehicula quis
-                    consequat donec suspendisse egestas at et viverra tincidunt. Tincidunt consectetur consequat nullam
-                    turpis in et lectus. Mattis augue nec tincidunt diam.</p>
-            </aside>
+
+    <section id="canton">
+
+        <div class="canton_video">
+            <video src="./videos/ElOro3.mp4" width="80%" controls></video>
+        </div>
+
+        <aside>
+            <h2>El Oro
+                y sus Maravillas</h2>
+            <p>La provincia de El Oro, ubicada en el sur de Ecuador, es un tesoro lleno de lugares maravillosos que
+                cautivan con su belleza natural, rica historia y cultura vibrante. A continuación, te presento
+                algunos de los destacados cantones de esta provincia, cada uno con sus propios encantos:</p>
+        </aside>
         </article>
     </section>
-    <section>
 
-        <div>
-            <img src="./images/bandera/macahala.png" alt="Machala" />
-            <h5>Machala</h5>
+    <section class="canton_galery">
+        <div class="slide_box">
+            <div class="arrow">&#10094;</div>
+            <div>
+                <img src="./images/bandera/macahala.png" alt="Machala" />
+                <h5>Machala</h5>
+            </div>
+            <div class="arrow">&#10095;</div>
         </div>
-
+        <h2 class="canton_title">Galeria</h2>
         <div id="slides">
             <div id="images">
                 <figure>
@@ -62,33 +68,40 @@
                 </figure>
             </div>
         </div>
+
     </section>
-    <footer>
+
+    <footer id="piePagina" class="container">
         <div>
-            <img src="./images/logo.png" alt="logo" />
+            <img src="./images/logo.png" alt="logo" class="footer_logo" />
         </div>
-        <div>
+
+        <div class="footer_menu">
             <ul>
-                <li>Compañia</li>
+                <li><b>Compañia</b></li>
                 <li><a href="#">Municipio de el Oro</a></li>
             </ul>
             <ul>
-                <li>Paginas</li>
+                <li><b>Paginas</b></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Contactos</a></li>
             </ul>
         </div>
-        <div>
-            <label for="suscribete">Subscribete</label>
-            <input name="suscribete" type="email" id="suscribete" placeholder="email@example.com" />
-            <button>Enviar</button>
+
+        <div class="footer_newslatter">
+            <form>
+                <h5>Subscribete</h5>
+                <input type="email" id="suscribete" placeholder="email@example.com" />
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <div>
-            <p>Copyrigh @ 2023 - 2025</p>
-            <a href="terminos_cond.html">Terminos y Condiciones</a>
-            <p>Av Plaza Central</p>
-        </div>
+
     </footer>
+    <div class="copyrigh">
+        <p>Copyrigh @ 2023 - 2025</p>
+        <a href="terminos_cond.html">Terminos y Condiciones</a>
+        <p>Av Plaza Central</p>
+    </div>
 </body>
 
 </html>

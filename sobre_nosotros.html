@@ -5,72 +5,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cantones</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
 </head>
 
 <body>
-    <nav>
-        <div>
+    <nav id="navegacion" class="absolute">
+        <div class="logo">
             <img src="./images/logo.png" alt="logo" />
         </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cantones.html">Cantones</a> </li>
-            <li><a href="mapa_turistico.html">Mapa Turistico</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-            <li><a href="sobre_nosotros.html">Sobre Notros</a></li>
+        <ul class="nav_submenu">
+            <li><a href="index.html" class="white">Inicio</a></li>
+            <li><a href="cantones.html" class="white">Cantones</a> </li>
+            <li><a href="mapa_turistico.html" class="white">Mapa Turistico</a></li>
+            <li><a href="contactos.html" class="white">Contactos</a></li>
+            <li><a href="sobre_nosotros.html" class="white">Sobre Nosotros</a></li>
         </ul>
     </nav>
-    <section>
-        <div>
-            <h1>Cantones del Oro</h1>
-            <img src="./images/sobrenosotros.jpg" alt="sobre_nosotros" width="100%" />
-        </div>
-    </section>
-    <section>
-        <article>
-                <h2>Quienes
-                    Somos? </h2>
-                <p>¡Explora, Descubre, Vívelo!
 
-                    En "El Oro para el mundo", nos enorgullece ser tus compañeros de viaje en esta emocionante aventura turística, hemos dedicado nuestro compromiso a ofrecer experiencias únicas y memorables que capturan la esencia de El Oro</p>
-        </article>
+    <section class="banner_cantons">
+        <div class="about_img">
+        </div>
+        <h1>Cantones del Oro</h1>
+    </section>
+
+    <section class="about">
         <article>
-    
             <div>
                 <img src="./images/persona1.png" alt="persona1" />
-                <h5> Objetivos  / Misiones </h5>
-                <p>Nos esforzamos por ser tus guías confiables en el mundo del turismo, proporcionando experiencias auténticas que te conecten con la riqueza cultural, la belleza natural y las maravillas únicas de la provincia de El Oro.</p>
-                    <img src="./images/persona2.png" alt="persona2" />
+
             </div>
-    
+            <div>
+                <h2>Quienes Somos? </h2>
+                <p>¡Explora, Descubre, Vívelo!
+
+                    En "El Oro para el mundo", nos enorgullece ser tus compañeros de viaje en esta emocionante aventura
+                    turística, hemos dedicado nuestro compromiso a ofrecer experiencias únicas y memorables que capturan
+                    la esencia de El Oro</p>
+            </div>
+        </article>
+        <div class="about_line"></div>
+        <article class="about_mision">
+            <div>
+                <h2> Objetivos / Misiones </h2>
+                <p>Nos esforzamos por ser tus guías confiables en el mundo del turismo, proporcionando experiencias
+                    auténticas que te conecten con la riqueza cultural, la belleza natural y las maravillas únicas de la
+                    provincia de El Oro.</p>
+
+            </div>
+            <div>
+                <img src="./images/persona2.png" alt="persona2" />
+            </div>
+
         </article>
     </section>
-    <footer>
+    <footer id="piePagina" class="container">
         <div>
-            <img src="./images/logo.png" alt="logo" />
+            <img src="./images/logo.png" alt="logo" class="footer_logo" />
         </div>
-        <div>
+
+        <div class="footer_menu">
             <ul>
-                <li>Compañia</li>
+                <li><b>Compañia</b></li>
                 <li><a href="#">Municipio de el Oro</a></li>
             </ul>
             <ul>
-                <li>Paginas</li>
+                <li><b>Paginas</b></li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Contactos</a></li>
             </ul>
         </div>
-        <div>
-            <label for="suscribete">Subscribete</label>
-            <input type="email" id="Subscribete" placeholder="email@example.com" />
-            <button>Enviar</button>
+
+        <div class="footer_newslatter">
+            <form>
+                <h5>Subscribete</h5>
+                <input type="email" id="suscribete" placeholder="email@example.com" />
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <div>
-            <p>Copyrigh @ 2023 - 2025</p>
-            <a href="terminos_cond.html">Terminos y Condiciones</a>
-            <p>Av Plaza Central</p>
-        </div>
+
     </footer>
+    <div class="copyrigh">
+        <p>Copyrigh @ 2023 - 2025</p>
+        <a href="terminos_cond.html">Terminos y Condiciones</a>
+        <p>Av Plaza Central</p>
+    </div>
 </body>
 
 </html>

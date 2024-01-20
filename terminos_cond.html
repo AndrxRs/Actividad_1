@@ -4,23 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Terminos y Condiciones</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <link rel="stylesheet" href="css/terms_cond.css" type="text/css" />
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cantones.html">Cantones</a> </li>
-            <li><a href="mapa_turistico.html">Mapa Turistico</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-            <li><a href="sobre_nosotros.html">Sobre Notros</a></li>
-        </ul>
-    </nav>
+    <nav id="navegacion" class="absolute">
+		<div class="logo">
+			<img src="./images/logo.png" alt="logo" />
+		</div>
+		<ul class="nav_submenu">
+			<li><a href="index.html">Inicio</a></li>
+			<li><a href="cantones.html">Cantones</a> </li>
+			<li><a href="mapa_turistico.html">Mapa Turistico</a></li>
+			<li><a href="contactos.html">Contactos</a></li>
+			<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+		</ul>
+	</nav>
     <section>
         <div>
             <img src="./images/termYcond.png" alt="terminos y condiciones" width="100%"/>
         </div>
     </section>
-    <section>
+    <section class="terms_box">
         <h2>Terminos Y Condiciones</h2>
         <p>
             Bienvenido al sitio web de Travel, dedicado a proporcionar información sobre destinos turísticos y servicios relacionados. Al acceder y utilizar este sitio web, aceptas cumplir con los siguientes términos y condiciones. Si no estás de acuerdo con alguna parte de estos términos, por favor, abstente de utilizar nuestro sitio.
@@ -53,31 +58,36 @@
         <p>
             Este sitio web se proporciona "tal cual" y "según esté disponible". No nos hacemos responsables de cualquier daño directo, indirecto, incidental, especial, consecuente o punitivo derivado del uso o la imposibilidad de usar este sitio.        </p>
     </section>
-    <footer>
-        <div>
-            <img src="./images/logo.png" alt="logo"/>
-        </div>
-        <div>
-            <ul>
-                <li>Compañia</li>
-                <li><a href="#">Municipio de el Oro</a></li>
-            </ul>
-            <ul>
-                <li>Paginas</li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
-        </div>
-        <div>
-            <label for="suscribete">Subscribete</label>
-            <input type="email" id="Subscribete" placeholder="email@example.com"/>
-            <button>Enviar</button>
-        </div>
-        <div>
-            <p>Copyrigh @ 2023 - 2025</p>
-            <a href="terminos_cond.html">Terminos y Condiciones</a>
-            <p>Av Plaza Central</p>
-        </div>
-    </footer>
+    <footer id="piePagina" class="container">
+		<div>
+			<img src="./images/logo.png" alt="logo" class="footer_logo" />
+		</div>
+
+		<div class="footer_menu">
+			<ul>
+				<li><b>Compañia</b></li>
+				<li><a href="#">Municipio de el Oro</a></li>
+			</ul>
+			<ul>
+				<li><b>Paginas</b></li>
+				<li><a href="#">Sobre nosotros</a></li>
+				<li><a href="#">Contactos</a></li>
+			</ul>
+		</div>
+
+		<div class="footer_newslatter">
+			<form>
+				<h5>Subscribete</h5>
+				<input type="email" id="suscribete" placeholder="email@example.com" />
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+
+	</footer>
+	<div class="copyrigh">
+		<p>Copyrigh @ 2023 - 2025</p>
+		<a href="terminos_cond.html">Terminos y Condiciones</a>
+		<p>Av Plaza Central</p>
+	</div>
 </body>
 </html>

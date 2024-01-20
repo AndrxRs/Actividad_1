@@ -5,59 +5,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa Turistico</title>
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+
 </head>
 
 <body>
-    <nav>
-        <div>
-            <img src="./images/logo.png" alt="logo" />
-        </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="cantones.html">Cantones</a> </li>
-            <li><a href="mapa_turistico.html">Mapa Turistico</a></li>
-            <li><a href="contactos.html">Contactos</a></li>
-            <li><a href="about_me.html">Sobre Notros</a></li>
-        </ul>
-    </nav>
-    <section>
-
+    <nav id="navegacion">
+		<div class="logo">
+			<img src="./images/logo.png" alt="logo" />
+		</div>
+		<ul class="nav_submenu">
+			<li><a href="index.html" class="dark">Inicio</a></li>
+			<li><a href="cantones.html" class="dark">Cantones</a> </li>
+			<li><a href="mapa_turistico.html" class="dark">Mapa Turistico</a></li>
+			<li><a href="contactos.html" class="dark">Contactos</a></li>
+			<li><a href="sobre_nosotros.html" class="dark">Sobre Nosotros</a></li>
+		</ul>
+	</nav>
+    <section class="map_travel">
         <h1>Mapa Turístico - El Oro, Ecuador</h1>
-
-        <img src="./images/eloro.jpg" alt="Mapa El Oro, Ecuador" usemap="#mapa">
-
-        <map name="mapa">
-            <area shape="rect" coords="100,50,200,150" alt="Machala" href="machala.html">
-            <area shape="circle" coords="300,100,50" alt="Santa Rosa" href="santa_rosa.html">
-            <area shape="poly" coords="450,50,500,100,400,100" alt="Zaruma" href="zaruma.html">
-        </map>
+        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Oro%20Verde%20Machala+(El%20Oro)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.maps.ie/population/">Find Population on Map</a></iframe></div>
     </section>
-    <footer>
-        <div>
-            <img src="./images/logo.png" alt="logo" />
-        </div>
-        <div>
-            <ul>
-                <li>Compañia</li>
-                <li><a href="#">Municipio de el Oro</a></li>
-            </ul>
-            <ul>
-                <li>Paginas</li>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Contactos</a></li>
-            </ul>
-        </div>
-        <div>
-            <label for="suscribete">Subscribete</label>
-            <input type="email" id="Subscribete" placeholder="email@example.com" />
-            <button>Enviar</button>
-        </div>
-        <div>
-            <p>Copyrigh @ 2023 - 2025</p>
-            <a href="terminos_cond.html">Terminos y Condiciones</a>
-            <p>Av Plaza Central</p>
-        </div>
-    </footer>
+    <footer id="piePagina" class="container">
+		<div>
+			<img src="./images/logo.png" alt="logo" class="footer_logo" />
+		</div>
+
+		<div class="footer_menu">
+			<ul>
+				<li><b>Compañia</b></li>
+				<li><a href="#">Municipio de el Oro</a></li>
+			</ul>
+			<ul>
+				<li><b>Paginas</b></li>
+				<li><a href="#">Sobre nosotros</a></li>
+				<li><a href="#">Contactos</a></li>
+			</ul>
+		</div>
+
+		<div class="footer_newslatter">
+			<form>
+				<h5>Subscribete</h5>
+				<input type="email" id="suscribete" placeholder="email@example.com" />
+				<button type="submit">Enviar</button>
+			</form>
+		</div>
+
+	</footer>
+	<div class="copyrigh">
+		<p>Copyrigh @ 2023 - 2025</p>
+		<a href="terminos_cond.html">Terminos y Condiciones</a>
+		<p>Av Plaza Central</p>
+	</div>
 </body>
 
 </html>

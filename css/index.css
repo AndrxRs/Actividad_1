@@ -1,0 +1,518 @@
+/* Typography */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+html {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+/* Reusable Style */
+.absolute {
+  position: absolute;
+}
+.dark {
+  color: #0f0f0f;
+}
+
+.white {
+  color: #ffffff;
+}
+/* Footer */
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#piePagina {
+  display: grid;
+  grid-auto-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  position: relative;
+  padding: 2rem;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.14);
+  color: #675c5c;
+}
+
+#piePagina a {
+  color: #675c5c;
+  text-decoration-line: none;
+}
+
+.footer_logo {
+  width: 423px;
+  height: 126px;
+}
+
+.footer_menu {
+  display: flex;
+  width: 100%;
+}
+
+.footer_menu ul {
+  list-style: none;
+  width: 100%;
+}
+
+.footer_menu li {
+  padding: 0.5rem;
+}
+
+.footer_newslatter {
+  margin: auto;
+}
+
+.footer_newslatter input[type="email"] {
+  width: 100%;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #3a7438;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  outline: none;
+}
+
+.footer_newslatter h5 {
+  font-size: 20px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.footer_newslatter button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background: #16ab13;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: medium;
+  outline: none;
+  border: transparent;
+  border-radius: 4px;
+}
+
+.copyrigh {
+  display: flex;
+  justify-content: end;
+  color: #675c5c;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
+  gap: 4rem;
+  padding-right: 2rem;
+}
+
+.copyrigh a {
+  padding: 0.9rem 0rem;
+}
+
+/* NavBar */
+nav {
+  display: flex;
+  width: 100%;
+  padding: 2.5rem 5rem;
+}
+
+.logo img {
+  width: 121px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+#navegacion > ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  list-style: none;
+  gap: 4rem;
+}
+
+#navegacion a {
+  text-decoration-line: none;
+  font-weight: 700;
+}
+
+#banner {
+  color: #ffffff;
+}
+
+.banner_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("https://visitaeloro.com/wp-content/uploads/2018/09/pinas-el-oro-ecuador-30-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 80vh;
+}
+
+#banner h1 {
+  position: absolute;
+  top: 10%;
+  bottom: 50%;
+  left: 5rem;
+  font-size: 78px;
+}
+
+.banner_box {
+  position: absolute;
+  font-size: 20px;
+  bottom: 10rem;
+  width: 100%;
+  display: grid;
+  padding: 0 5rem;
+  grid-template-columns: auto auto;
+}
+
+.banner_box ul {
+  display: flex;
+  justify-content: end;
+  gap: 2rem;
+}
+
+.banner_box li {
+  list-style: none;
+}
+
+/* Section One */
+
+#info {
+  padding: 0 5rem;
+  width: 100%;
+}
+
+.info_title {
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  color: #16ab13;
+}
+
+.info_title strong {
+  color: #dcf251;
+  text-transform: uppercase;
+}
+
+.info_article {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}
+
+.info_article > p:nth-of-type(1) {
+  border-left: 4px solid #eeb602;
+  border-top: 4px solid #eeb602;
+  padding: 2rem;
+  height: 30vh;
+}
+
+.info_button {
+  border-radius: 22px;
+  background: #16ab13;
+  padding: 1rem 3rem;
+  text-align: end;
+  float: right;
+  color: #ffffff !important;
+  font-weight: 800;
+}
+
+.info_article > p:nth-of-type(2) {
+  padding-top: 4rem;
+}
+
+.info_img img {
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.sub_title {
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.info_article_two {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 2rem;
+  margin: auto;
+}
+
+.info_article_two > div {
+  padding: 3rem;
+  box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.25);
+}
+
+.info_article_two > div > button {
+  width: 100%;
+  text-align: center;
+  background: rgba(22, 171, 19, 0.24);
+  color: #494444;
+  font-weight: 800;
+  border-radius: 4px;
+  font-size: 16px;
+  padding: 0.5rem 0;
+  outline-style: none;
+  border: 1px solid #16ab13;
+  cursor: pointer;
+}
+
+.info_article_two > div > button:hover {
+  background: #16ab13;
+  color: #ffffff;
+}
+.info_article_two > div:nth-of-type(2) {
+  margin-top: 4rem;
+}
+
+.right {
+  text-align: right !important;
+}
+
+.info_article_tree {
+  display: flex;
+  position: relative;
+  margin: 2rem 0;
+}
+
+.info_article_tree div {
+  width: 50%;
+}
+
+.info_article_tree div > img {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.info_article_tree_grid_two {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/machala/machala2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  padding: 2rem;
+  color: #ffffff;
+  font-weight: 800;
+}
+
+.info_article_tree_grid_two > h4 {
+  text-align: right;
+  font-size: 40px;
+  font-style: normal;
+}
+
+.info_article_tree_grid_two > p {
+  text-align: justify;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.info_article_tree_grid_two > form {
+  padding-top: 2rem;
+}
+
+.info_article_tree_grid_two > form > select {
+  margin: 1rem 0;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: rgba(217, 217, 217, 0.33);
+  color: #000;
+}
+
+/* Contactos */
+
+.contact {
+  padding: 2.5rem 5rem;
+}
+
+.contact h1 {
+  font-size: 30px;
+}
+
+.contact > form > input {
+  width: 100%;
+  padding: 1rem;
+}
+
+.contact > form > textarea {
+  width: 100%;
+}
+
+.contact > form > input[type="submit"] {
+  width: 100%;
+  background: #16ab13;
+  border: 1px solid #16ab13;
+  font-size: large;
+  font-weight: 700;
+}
+
+.contact > form > input[type="submit"]:hover {
+  background: #3a7438;
+}
+
+/* Mapa */
+
+.map_travel {
+  padding: 2rem 5rem;
+}
+
+.map_travel h1 {
+  font-size: 30px;
+}
+
+/* Cantones */
+
+.banner_cantons h1 {
+  position: absolute;
+  top: 20%;
+  padding-left: 5rem;
+  color: #ffffff;
+  font-size: 50px;
+}
+
+.cantons_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/bannercantones.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 60vh;
+}
+
+/* Sobre Nosotros */
+.about_img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.48), rgba(0, 0, 0, 0.48)),
+    url("../images/sobrenosotros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 60vh;
+}
+
+.about {
+  padding: 2rem 5rem;
+}
+
+.about > article  {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.about > article > div:nth-of-type(2) {
+  padding: 5rem;
+  text-align: center;
+}
+
+.about_line {
+  margin: 2rem 0;
+  padding: 0.5rem 0;
+  background: #D9D9D9;
+  width: 100%;
+  height: 1rem;
+}
+
+.about .about_mision {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #D9D9D9;
+}
+
+.about_mision > div:nth-of-type(1) {
+  padding: 8rem 5rem;
+  text-align: center;
+}
+
+/* Cantones */
+
+#canton {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 3rem;
+  padding: 2rem 5rem;
+  margin-top: 5rem;
+}
+
+.canton_video {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+#canton > aside {
+  padding: 4rem 0;
+}
+
+#canton > aside > h2{
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.canton_galery  {
+  padding: 2rem 5rem;
+}
+
+.canton_galery .slide_box {
+  display: flex;
+  gap: 3rem;
+  padding-left: 3rem;
+}
+
+.canton_galery .slide_box > div > h5{
+  text-align: center;
+}
+
+.arrow {
+  font-size: 40px;
+}
+
+.canton_title {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+#slides > div {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+#slides > div > figure > img {
+  width: 100%;
+  height: 40vh;
+  object-fit: cover;
+}
+
+
