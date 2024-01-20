@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Inicio</title>
+	<link rel="stylesheet" href="css/index.css" type="text/css" />
 </head>
 
 <body>
-	<nav id="navegacion">
-		<div>
+	<nav id="navegacion" class="absolute">
+		<div class="logo">
 			<img src="./images/logo.png" alt="logo" />
 		</div>
-		<ul>
-			<li><a href="index.html">Inicio</a></li>
-			<li><a href="cantones.html">Cantones</a> </li>
-			<li><a href="mapa_turistico.html">Mapa Turistico</a></li>
-			<li><a href="contactos.html">Contactos</a></li>
-			<li><a href="sobre_nosotros.html">Sobre Nosotros</a></li>
+		<ul class="nav_submenu">
+			<li><a href="index.html" class="white">Inicio</a></li>
+			<li><a href="cantones.html" class="white">Cantones</a> </li>
+			<li><a href="mapa_turistico.html" class="white">Mapa Turistico</a></li>
+			<li><a href="contactos.html" class="white">Contactos</a></li>
+			<li><a href="sobre_nosotros.html" class="white">Sobre Nosotros</a></li>
 		</ul>
 	</nav>
 	<section id="banner">
-		<video src="./videos/provincia.mp4" controls></video>
+		<div class="banner_img"></div>
 		<h1>Portovelo</h1>
-		<div>
+		<div class="banner_box">
 			<h4>
 				El Primer Centro Minero del Ecuador
 			</h4>
@@ -34,28 +35,36 @@
 			</ul>
 		</div>
 	</section>
+
 	<section id="info">
 		<article>
-			<h2>Provincia <strong>El ORO</strong></h2>
-			<div>
+			<h2 class="info_title">Provincia <strong>El ORO</strong></h2>
+			<div class="info_article">
 				<p>
-					¡Bienvenidos a la página que te llevará a un emocionante viaje a través de la maravillosa provincia de
-					El Oro, Ecuador! Aquí encontrarás un tesoro de experiencias únicas y sitios turísticos que te dejarán
+					¡Bienvenidos a la página que te llevará a un emocionante viaje a través de la maravillosa provincia
+					de
+					El Oro, Ecuador! Aquí encontrarás un tesoro de experiencias únicas y sitios turísticos que te
+					dejarán
 					asombrado.
 				</p>
 				<p>
-					Se fundó el 23 de abril de 1884. Los antiguos habitantes de El Oro provinieron de la Isla Puná. Luego se
+					Se fundó el 23 de abril de 1884. Los antiguos habitantes de El Oro provinieron de la Isla Puná.
+					Luego se
 					asentaron los Tumbez, los Mayavicas y los Piuras, en el preincario. La conquista incásica no influyó
-					significativamente en aquellos pueblos. Los españoles ingresaron por Tumbez, que se convirtió luego en
-					un puerto clave porque fue el asiento de las minas de Zaruma, cuya fama traspasó las fronteras.
+					significativamente en aquellos pueblos. Los españoles ingresaron por Tumbez, que se convirtió luego
+					en
+					un puerto clave porque fue el asiento de las minas de Zaruma, cuya fama traspasó las fronteras.<br/>
+					<a href="/" class="info_button">Saber Mas...</a>
 				</p>
-				<img width="100" height="100" src="./images/image2.png" alt="image2" />
 			</div>
-		</article>	
-		<article>
-			<h2>
-				Que brinda la provincia de El Oro a la gente
-			</h2>
+			<div class="info_img">
+				<img src="./images/image2.png" alt="image2" />
+			</div>
+		</article>
+		<h2 class="sub_title">
+			Que Brinda La Provincia <br/> De El Oro A La Gente
+		</h2>
+		<article class="info_article_two">
 			<div>
 				<img src="./images/festividades.png" alt="festividades" />
 				<h5>Festividades</h5>
@@ -72,12 +81,12 @@
 				<button>ver</button>
 			</div>
 		</article>
-		<h2>Ubicación Geografica</h2>
-		<article>
+		<h2 class="sub_title right">Ubicación Geografica</h2>
+		<article class="info_article_tree">
 			<div>
 				<img src="./images/mapa.png" alt="mapa" />
 			</div>
-			<div>
+			<div class="info_article_tree_grid_two">
 				<h4>El Oro</h4>
 				<p>Busqueda de los sitios que ofrece esta bella provincia</p>
 				<form>
@@ -92,31 +101,37 @@
 			</div>
 		</article>
 	</section>
-	<footer id="piePagina">
+	<footer id="piePagina" class="container">
 		<div>
-			<img src="./images/logo.png" alt="logo" />
+			<img src="./images/logo.png" alt="logo" class="footer_logo" />
 		</div>
-		<div>
+
+		<div class="footer_menu">
 			<ul>
-				<li>Compañia</li>
+				<li><b>Compañia</b></li>
 				<li><a href="#">Municipio de el Oro</a></li>
 			</ul>
 			<ul>
-				<li>Paginas</li>
+				<li><b>Paginas</b></li>
 				<li><a href="#">Sobre nosotros</a></li>
 				<li><a href="#">Contactos</a></li>
 			</ul>
 		</div>
-		<div>
-			<label for="suscribete">Subscribete</label>
-			<input type="email" id="suscribete" placeholder="email@example.com" />
-			<button>Enviar</button>
+
+		<div class="footer_newslatter">
+			<form>
+				<h5>Subscribete</h5>
+				<input type="email" id="suscribete" placeholder="email@example.com" />
+				<button type="submit">Enviar</button>
+			</form>
 		</div>
-		<div>
-			<p>Copyrigh @ 2023 - 2025</p>
-			<a href="terminos_cond.html">Terminos y Condiciones</a>
-			<p>Av Plaza Central</p>
-		</div>
+
 	</footer>
+	<div class="copyrigh">
+		<p>Copyrigh @ 2023 - 2025</p>
+		<a href="terminos_cond.html">Terminos y Condiciones</a>
+		<p>Av Plaza Central</p>
+	</div>
 </body>
+
 </html>
